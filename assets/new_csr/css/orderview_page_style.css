@@ -1,0 +1,50 @@
+
+    .form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline {
+        padding-top: 0px;
+    }
+
+	.padding-left-0{
+		padding-left:0 !important; 
+	}
+	
+	.margin-0 {
+		margin: 0 !important;
+	}
+	.margin-bottom-20 {
+		margin-bottom: 20px !important;
+	}
+	.light-grey, .light-grey i {
+		background-color: #f3f5f6 !important;
+		color: #b8b4b4 !important;
+		border-color: #d7d7d7 !important;
+		}
+		
+	.flat-radio div.radio {
+		display: none;
+	}
+	.border-top {
+		border-top: 1px solid #eee;
+	}
+	
+	textarea {
+		resize: none;
+	}
+	
+	.tab-btn {
+		border: 0;
+		padding: 10px;
+		color: #5b9bd1;
+		margin-top: 1px;
+	}
+	.font-lg {
+		font-size: 16px !important;
+	}
+	.font-sm {
+		font-size: 13px !important;
+	}
+	.word-break{max-width:100%;word-wrap:break-word;}
+	.note-grey, .note-grey i {
+  background-color: #f3f5f6 !important;
+  color: #b8b4b4 !important;
+  border-color: #d7d7d7 !important;
+  }

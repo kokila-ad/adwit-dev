@@ -1,0 +1,143 @@
+.active > a{
+    color: #d71a22 !important;
+    border-color: #333;
+    background: #e1e1e100 !important;
+}
+.green.btn {
+color: #FFFFFF;
+background-color: #26a69a;
+}
+.btn-circle {
+border-radius: 25px !important;
+}
+.green.btn:hover, .green.btn:focus, .green.btn:active, .green.btn.active {
+color: #FFFFFF;
+background-color: #1f897f;
+}
+
+.switch {
+display: inline-block;
+position: relative;
+top: 5px;
+}
+.switch input {
+display: none;
+}
+.switch small {
+display: inline-block;
+width: 43px;
+height: 18px;
+background: #455a64;
+border-radius: 30px;
+position: relative;
+cursor: pointer;
+}
+.switch small:after {
+content: "No";
+position: absolute;
+color: #fff;
+font-size: 11px;
+font-weight: 600;
+width: 100%;
+left: 0px;
+text-align: right;
+padding: 0 6px;
+box-sizing: border-box;
+line-height: 18px;
+}
+.switch small:before {
+content: "";
+position: absolute;
+width: 12px;
+height: 12px;
+background: #fff;
+border-radius: 50%;
+top: 3px;
+left: 3px;
+transition: .3s;
+box-shadow: -3px 0 3px rgba(0,0,0,0.1);
+}
+.switch input:checked ~ small {
+background: #4fc5c5;
+transition: .3s;
+}
+.switch input:checked ~ small:before {
+transform: translate(25px, 0px);
+transition: .3s;
+}
+.switch input:checked ~ small:after {
+content: "Yes";
+text-align: left;
+}
+.pointer{
+cursor: pointer;
+}
+.darkgrey{
+background-color: #bdbdbd;
+}
+.lightgrey{
+background-color: #efefef !important;
+}
+
+
+.btn.btn-xs {
+font-size: 12px !important;
+padding: 7px 7px !important;
+}
+
+.btn-group, .btn-group-vertical {
+position: relative;
+display: inline-flex;
+vertical-align: middle;
+}
+.w-100 {
+width: 100%!important;
+}
+.btn-check:active+.btn.btn-active-success, .btn-check:checked+.btn.btn-active-success, .btn.btn-active-success.active, .btn.btn-active-success.show, .btn.btn-active-success:active:not(.btn-active), .btn.btn-active-success:focus:not(.btn-active), .btn.btn-active-success:hover:not(.btn-active), .show>.btn.btn-active-success {
+color: #fff;
+border-color: #000;
+background-color: #000!important;
+}
+.btn-check {
+position: absolute;
+clip: rect(0,0,0,0);
+pointer-events: none;
+}
+button, input, optgroup, select, textarea {
+margin: 0;
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
+}
+.btn:not(.btn-shadow):not(.shadow):not(.shadow-sm):not(.shadow-lg) {
+box-shadow: none!important;
+}
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+}
+.btn-group-vertical>.btn, .btn-group>.btn {
+position: relative;
+flex: 1 1 auto;
+}
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+border-bottom-left-radius: 5px !important;
+border-top-left-radius: 5px !important;
+}
+.btn-group > .btn:last-child:not(:first-child), .btn-group > .dropdown-toggle:not(:first-child) {
+border-bottom-right-radius: 5px !important;
+border-top-right-radius: 5px !important;
+}
+.btn {
+outline: 0!important;
+}
+.btn-outline-secondary{
+border: 1px solid #c1c1c1 !important;
+}
+.btn-group-vertical>.btn, .btn-group>.btn {
+position: relative;
+flex: 1 1 auto;
+}
+.fs-2 {
+font-size: 1.5rem!important;
+}

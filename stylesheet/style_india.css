@@ -1,0 +1,1765 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+body {
+	background-image: url(../images/stripes.gif);
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	5;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	min-width:300px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 98.8095%;
+	padding-left: 0.5952%;
+	padding-right: 0.5952%;
+}
+#Logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #FFF;
+	padding: 0px;
+	border-bottom:3px solid #3f206e;
+}
+
+#Logo-Img {
+	clear: both;
+	float: left;
+	text-align:center;
+	margin-left: 25.3012%;
+	width: 49.3975%;
+	display: block;
+}
+
+
+#Logo-Img img {
+	padding-top:20px;
+	padding-bottom:20px;
+	width:135px;
+	height:70px;
+}
+
+#Middle-Div {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	background-color:#fff;
+	display: block;
+}
+
+#Footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	margin-top: 8px;
+	width: 100%;
+	display: block;
+	background-color: #3f206e;
+}
+
+#footer-copy {
+	float:left;
+	padding:5px;
+	color:#fff;
+	font-size:12px;
+}
+
+#footer-copy a{
+	text-decoration: none;
+	color:#fff;
+}
+
+#footer-version {
+	float:right;
+	padding:5px;
+	color:#fff;
+	font-size:12px;
+}
+
+
+#header-div {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Login-div {
+	clear: both;
+	float: left;
+	margin-left: 5%;
+	width: 90%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: 1px solid #1e0052;
+	display: block;
+}
+
+#Login-h1 {
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
+	font-size: large;
+	color:#FFF;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	background-color:#3f206e;
+	display: block;
+}
+
+#Login-input {
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Login-input input {
+	width: 85%;
+	padding:5px;
+	outline: none;
+	border: 0;
+	background-color:transparent;
+	border-bottom: 1px solid #1e0052;
+}
+
+#Login-button {
+	text-align:center;
+	margin:0 auto;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Login-button button {
+	border: 0;
+	width: 85%;
+	padding: 10px 5px;
+	color:#FFF;
+	background-color: #993186;
+}
+
+#Login-button p a {
+	text-decoration: none;
+	color:#000;
+}
+
+#Login-button p a:hover {
+	text-decoration: none;
+	color: #F00;
+}
+
+#Forgot-pass {
+	clear: both;
+	float: left;
+	margin-left: 5%;
+	width: 90%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: 1px solid #000;
+	display: none;
+}
+
+#Forgot-pass-h1 {
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
+	font-size: large;
+	color:#FFF;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	background-color:#000;
+	display: block;
+}
+
+#Forgot-pass-input {
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Forgot-pass-input input {
+	width: 85%;
+	padding:5px;
+	outline: none;
+	border: 0;
+	border-bottom: 1px solid #F00;
+}
+
+#Forgot-pass-button {
+	text-align:center;
+	margin:0 auto;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Forgot-pass-button button {
+	border: 0;
+	width: 85%;
+	padding: 10px 5px;
+	color:#FFF;
+	background-color: #F00;
+}
+
+#Forgot-pass-button p a {
+	text-decoration: none;
+	color:#000;
+}
+
+#Forgot-pass-button p a:hover {
+	text-decoration: none;
+	color: #F00;
+}
+
+#Navigation-Tab {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border-bottom: thin solid #000;
+}
+
+#Navigation-Tab ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: medium;
+}
+
+#Navigation-Tab ul li {
+	display: block;
+	margin-top:3px;
+	margin-bottom: 0px;
+}
+
+#Navigation-Tab ul li a {
+  display: block;
+  text-decoration: none;
+  color:#FFF;
+  padding: 10px 10px;
+  background:#000;
+}
+
+#Navigation-Tab ul li a:hover {
+	background:#F00;
+}
+
+#Navigation-Tab ul li a:active {
+	background:#F00;
+}
+
+#Navigation-Tab-2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: none;
+	border-bottom: thin solid #000; 
+}
+
+#Navigation-Tab-2 ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: medium;
+}
+
+#Navigation-Tab-2 ul li {
+	display:  inline-block;
+	margin-bottom: 0px;
+}
+
+#Navigation-Tab-2 ul li a {
+  display: block;
+  text-decoration: none;
+  color:#FFF;
+  padding: 5px 10px;
+  background:#000;
+}
+
+#Navigation-Tab-2 ul li a:hover {
+	background:#F00;
+}
+
+#Navigation-Tab-2 ul li a:active {
+	background:#F00;
+}
+
+#Middle-text {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-size: large;
+	text-align: center;
+	padding: 25px 0;
+}
+
+#Select_Form {
+	clear: none;
+	float: left;
+	margin-left: 1.2048%;
+	width: 100%;
+	display: block;
+	text-align:center;
+}
+
+#Select-Form-Txt {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding:20px 0px;
+	font-size: medium;
+}
+
+#Select-Form-Tab {
+	clear: none;
+	margin-left: 3.5%;
+	float: left;
+	width: 90%;
+	margin-bottom: 20px;
+	display: block;
+}
+
+#Select-Form-Tab ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: medium;
+}
+
+#Select-Form-Tab ul li {
+	display:  block;
+	margin-top:3px;
+	margin-bottom: 0px;
+}
+
+#Select-Form-Tab ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 10px;
+  background: #CCC;
+}
+
+#Select-Form-Tab ul li a:hover {
+	background: #999;
+}
+
+#Select-Form-Tab ul li a:active {
+	background: #999;
+}
+
+#Back-btn {
+	clear: none;
+	margin-left: 4.5%;
+	float: left;
+	width: 90%;
+	margin-bottom: 20px;
+	display: block;
+}
+
+#Back-btn a {
+  text-align: center;  
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+  font-size: small;
+  padding: 10px 10px;
+  background: #000;
+}
+
+#Back-btn a:hover {
+	background: #F00;
+}
+
+#Select_Form-2 {
+	clear: none;
+	float: left;
+	margin-left: 1.2048%;
+	width: 100%;
+	display: none;
+	text-align:center;
+}
+
+#Select-Form-Txt-2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding:20px 0px;
+	font-size: medium;
+}
+
+#Select-Form-Tab-2 {
+	clear: none;
+	margin-left: 3.5%;
+	float: left;
+	width: 90%;
+	margin-bottom: 20px;
+	display: block;
+}
+
+#Select-Form-Tab-2 ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: medium;
+}
+
+#Select-Form-Tab-2 ul li {
+	display:  block;
+	margin-top:3px;
+	margin-bottom: 0px;
+}
+
+#Select-Form-Tab-2 ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 10px;
+  background: #CCC;
+}
+
+#Select-Form-Tab-2 ul li a:hover {
+	background: #999;
+}
+
+#Select-Form-Tab-2 ul li a:active {
+	background: #999;
+}
+
+
+#Form-ad {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+	margin-bottom:20px;
+}
+
+#Pub-Name {
+	clear: both;
+	float: left;
+	margin-top: 10px;
+	margin-left: 5%;
+	width: 90%;
+	display: block;
+	background-color: #666;
+}
+
+#Pub-Name p {
+	padding:10px 10px;
+	text-align: center;
+	margin: 0px;
+	color: #FFF;
+	font-size: medium;
+}
+
+#Format-Name {
+	clear: none;
+	float: left;
+	margin-top: 2px;
+	margin-left: 5%;
+	width: 90%;
+	display: block;
+	background-color: #666;
+}
+
+#Format-Name p {
+	text-align: center;
+	padding:10px 10px;
+	margin: 0px;
+	color: #FFF;
+	font-size: medium;
+}
+
+
+#AB {
+	clear: both;
+	float: left;
+	margin-top: 1px;
+	margin-left: 5%;
+	width: 90%;
+	display: block;
+	background-color: #dfdfdf;
+}
+
+#AB p {
+	text-align: center;
+	padding: 5px 10px;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AC {
+	clear: none;
+	float: left;
+	margin-top: 1px;
+	margin-left: 5%;
+	width: 90%;
+	display: block;
+	background-color: #dfdfdf;
+}
+
+#AC p {
+	text-align: center;
+	padding: 7.5px 10px;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AC p input {
+	text-align: center;
+	width: 95%;
+	border: 0px;
+	outline: none;
+	padding: 5px;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AD {
+	clear: none;
+	float: left;
+	margin-top: 1px;
+	margin-left: 5%;
+	width: 90%;
+	display: block;
+	background-color: #dfdfdf;
+}
+
+#AD p {
+	text-align:center;
+	padding: 5px 10px;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AE {
+	clear: none;
+	float: left;
+	margin-top: 1px;
+	margin-left:5%;
+	width: 90%;
+	display: block;
+	background-color: #dfdfdf;
+}
+
+#AE p {
+	text-align:center;
+	padding: 7.5px 10px;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AE p input {
+	text-align: center;
+	width: 95%;
+	border: 0px;
+	padding: 5px;
+	outline: none;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#error-div {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+
+
+	
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 97.4166%;
+	padding-left: 0.2916%;
+	padding-right: 0.2916%;
+}
+#Logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Logo-Img {	
+	clear: both;
+	float: left;
+	text-align:center;
+	margin-left: 25.3012%;
+	width: 49.3975%;
+	display: block;
+}
+
+#Logo-Img img {
+	padding:15px 15px;
+	width:140px;
+	height:73px;
+}
+
+#Middle-Div {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#header-div {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Login-div {
+	clear: both;
+	float: left;
+	margin-left: 20%;
+	width: 60%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: 1px solid #1e0052;
+	display: block;
+}
+
+#Login-h1 {
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
+	font-size: large;
+	color:#FFF;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	background-color:#3f206e;
+	display: block;
+}
+
+#Login-input {
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Login-input input {
+	width: 85%;
+	padding:5px;
+	outline: none;
+	border: 0;
+	background-color:transparent;
+	border-bottom: 1px solid #1e0052;
+}
+
+#Login-button {
+	text-align:center;
+	margin:0 auto;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Login-button button {
+	border: 0;
+	width: 85%;
+	padding: 10px 5px;
+	color:#FFF;
+	background-color: #993186;
+}
+
+#Login-button p a {
+	text-decoration: none;
+	color:#000;
+}
+
+#Login-button p a:hover {
+	text-decoration: none;
+	color: #F00;
+}
+
+#Forgot-pass {
+	clear: both;
+	float: left;
+	margin-left: 20%;
+	width: 60%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: 1px solid #000;
+	display: none;
+}
+
+#Forgot-pass-h1 {
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
+	font-size: large;
+	color:#FFF;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	background-color:#000;
+	display: block;
+}
+
+#Forgot-pass-input {
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Forgot-pass-input input {
+	width: 85%;
+	padding:5px;
+	outline: none;
+	border: 0;
+	border-bottom: 1px solid #F00;
+}
+
+#Forgot-pass-button {
+	text-align:center;
+	margin:0 auto;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Forgot-pass-button button {
+	border: 0;
+	width: 85%;
+	padding: 10px 5px;
+	color:#FFF;
+	background-color: #F00;
+}
+
+#Forgot-pass-button p a {
+	text-decoration: none;
+	color:#000;
+}
+
+#Forgot-pass-button p a:hover {
+	text-decoration: none;
+	color: #F00;
+}
+
+#Navigation-Tab {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border-bottom: thin solid #000; 
+}
+
+#Navigation-Tab ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: medium;
+}
+
+#Navigation-Tab ul li {
+	display:  inline-block;
+	margin-bottom: 0px;
+}
+
+#Navigation-Tab ul li a {
+  display: block;
+  text-decoration: none;
+  color:#FFF;
+  padding: 10px 15px;
+  background:#000;
+}
+
+#Navigation-Tab ul li a:hover {
+	background:#F00;
+}
+
+#Navigation-Tab ul li a:active {
+	background:#F00;
+}
+
+#Navigation-Tab-2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border-bottom: thin solid #000; 
+}
+
+#Navigation-Tab-2 ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: medium;
+}
+
+#Navigation-Tab-2 ul li {
+	display:  inline-block;
+	margin-bottom: 0px;
+}
+
+#Navigation-Tab-2 ul li a {
+  display: block;
+  text-decoration: none;
+  color:#FFF;
+  padding: 5px 10px;
+  background:#000;
+}
+
+#Navigation-Tab-2 ul li a:hover {
+	background:#F00;
+}
+
+#Navigation-Tab-2 ul li a:active {
+	background:#F00;
+}
+
+#Middle-text {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-size: large;
+	text-align: center;
+	padding: 40px 0;
+}
+
+#Select_Form {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:center;
+}
+
+#Select-Form-Txt {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 37.1257%;
+	display: block;
+	text-align:right;
+	padding:20px 0px;
+	font-size: medium;
+}
+
+#Select-Form-Tab {
+	clear: none;
+	float: left;
+	margin-left: 0;
+	width: 62.2754%;
+	display: block;
+	margin-top:15px;
+}
+
+#Select-Form-Tab ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	float: left;
+	font-size: medium;
+}
+
+#Select-Form-Tab ul li {
+	display:  inline-block;
+	margin-bottom: 0px;
+}
+
+#Select-Form-Tab ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+  background: #CCC;
+}
+
+#Select-Form-Tab ul li a:hover {
+	background: #999;
+}
+
+#Select-Form-Tab ul li a:active {
+	background: #999;
+}
+
+#Back-btn {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: none;
+}
+
+#Select_Form-2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:center;
+}
+
+#Select-Form-Txt-2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 37.1257%;
+	display: block;
+	text-align:right;
+	padding:20px 0px;
+	font-size: medium;
+}
+
+#Select-Form-Tab-2 {
+	clear: none;
+	float: left;
+	margin-left: 0;
+	width: 62.2754%;
+	display: block;
+	margin-top:15px;
+}
+
+#Select-Form-Tab-2 ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	float: left;
+	font-size: medium;
+}
+
+#Select-Form-Tab-2 ul li {
+	display:  inline-block;
+	margin-bottom: 0px;
+}
+
+#Select-Form-Tab-2 ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+  background: #CCC;
+}
+
+#Select-Form-Tab-2 ul li a:hover {
+	background: #999;
+}
+
+#Select-Form-Tab-2 ul li a:active {
+	background: #999;
+}
+
+#Form-ad {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+	margin-bottom:20px;
+}
+
+#Pub-Name {
+	clear: both;
+	float: left;
+	width: 57.86835%;
+	margin-top: 0px;
+	display: block;
+	background-color: #666;
+	margin-left: 8.3665%;
+}
+
+#Pub-Name p {
+	padding:15px 15px;
+	text-align: left;
+	margin: 0px;
+	color: #FFF;
+	font-size: medium;
+}
+
+#Format-Name {
+	clear: none;
+	float: left;
+	margin-top: 0px;
+	margin-left:0.1%;
+	width: 25%;
+	display: block;
+	background-color: #666;
+}
+
+#Format-Name p {
+	text-align: center;
+	padding:15px 15px;
+	margin: 0px;
+	color: #FFF;
+	font-size: medium;
+}
+
+
+#AB {
+	clear: both;
+	float: left;
+	margin-top: 1px;
+	margin-left: 8.3665%;
+	width: 16.3346%;
+	display: block;
+	background-color: #dfdfdf;
+}
+
+#AB p {
+	text-align: left;
+	padding: 10px 10px;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AC {
+	clear: none;
+	float: left;
+	margin-top: 1px;
+	margin-left: 0.1%;
+	width: 25%;
+	display: block;
+	background-color: #dfdfdf;
+}
+
+#AC p {
+	text-align: left;
+	padding: 7.5px 10px;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AC p input {
+	text-align: left;
+	width: 95%;
+	padding: 3px;
+	outline: none;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AD {
+	clear: none;
+	float: left;
+	margin-top: 1px;
+	margin-left: 0.1%;
+	width: 16.3346%;
+	display: block;
+	background-color: #dfdfdf;
+}
+
+#AD p {
+	text-align: left;
+	padding: 10px 10px;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AE {
+	clear: none;
+	float: left;
+	margin-top: 1px;
+	margin-left: 0.1%;
+	width: 25%;
+	display: block;
+	background-color: #dfdfdf;
+}
+
+#AE p {
+	text-align: left;
+	padding: 7.5px 10px;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AE p input {
+	text-align: left;
+	width: 95%;
+	padding: 3px;
+	outline: none;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#error-div {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+}
+
+/* Desktop Layout: 900px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 79.6825%;
+	max-width: 1232px;
+	padding-left: 0.1587%;
+	padding-right: 0.1587%;
+	margin: auto;
+}
+#Logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Logo-Img {
+	clear: both;
+	float: left;
+	text-align:left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Logo-Img img {
+	padding:20px 20px;
+	width:145px;
+	height:75px;
+}
+
+#Middle-Div {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#header-div {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Login-div {
+	clear: both;
+	float: left;
+	margin-left: 33.4661%;
+	width: 33.0677%;
+	margin-top:75px;
+	margin-bottom:75px;
+	border:1px solid #1e0052;
+	display: block;
+}
+
+#Login-h1 {
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
+	font-size: large;
+	color:#FFF;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	background-color:#3f206e;
+	display: block;
+}
+
+#Login-input {
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Login-input input {
+	width: 85%;
+	padding:5px;
+	outline: none;
+	border: 0;
+	background-color:transparent;
+	border-bottom: 1px solid #1e0052;
+}
+
+#Login-button {
+	text-align:center;
+	margin:0 auto;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Login-button button {
+	border: 0;
+	width: 85%;
+	padding: 5px;
+	color:#FFF;
+	background-color: #993186;
+}
+
+#Login-button p a {
+	text-decoration: none;
+	color:#000;
+}
+
+#Login-button p a:hover {
+	text-decoration: none;
+	color: #F00;
+}
+
+#Forgot-pass {
+	clear: both;
+	float: left;
+	margin-left: 33.4661%;
+	width: 33.0677%;
+	margin-top:75px;
+	margin-bottom:75px;
+	border:1px solid #000;
+	display: none;
+}
+
+#Forgot-pass-h1 {
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
+	font-size: large;
+	color:#FFF;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	background-color:#000;
+	display: block;
+}
+
+#Forgot-pass-input {
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Forgot-pass-input input {
+	width: 85%;
+	padding:5px;
+	outline: none;
+	border: 0;
+	border-bottom: 1px solid #F00;
+}
+
+#Forgot-pass-button {
+	text-align:center;
+	margin:0 auto;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#Forgot-pass-button button {
+	border: 0;
+	width: 85%;
+	padding: 5px;
+	color:#FFF;
+	background-color: #F00;
+}
+
+#Forgot-pass-button p a {
+	text-decoration: none;
+	color:#000;
+}
+
+#Forgot-pass-button p a:hover {
+	text-decoration: none;
+	color: #F00;
+}
+
+#Navigation-Tab {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border-bottom: thin solid #000; 
+}
+
+#Navigation-Tab ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: medium;
+}
+
+#Navigation-Tab ul li {
+	display:  inline-block;
+	margin-bottom: 0px;
+}
+
+#Navigation-Tab ul li a {
+  display: block;
+  text-decoration: none;
+  color:#FFF;
+  padding: 5px 10px;
+  background:#000;
+}
+
+#Navigation-Tab ul li a:hover {
+	background:#F00;
+}
+
+#Navigation-Tab ul li a:active {
+	background:#F00;
+}
+
+#Navigation-Tab-2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border-bottom: thin solid #000; 
+}
+
+#Navigation-Tab-2 ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: medium;
+}
+
+#Navigation-Tab-2 ul li {
+	display:  inline-block;
+	margin-bottom: 0px;
+}
+
+#Navigation-Tab-2 ul li a {
+  display: block;
+  text-decoration: none;
+  color:#FFF;
+  padding: 5px 10px;
+  background:#000;
+}
+
+#Navigation-Tab-2 ul li a:hover {
+	background:#F00;
+}
+
+#Navigation-Tab-2 ul li a:active {
+	background:#F00;
+}
+
+
+#Middle-text {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-size: large;
+	text-align: center;
+	padding: 75px 0;
+}
+
+
+#Select_Form {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:center;
+}
+
+#Select-Form-Txt {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 41.4342%;
+	display: block;
+	text-align: right;
+	padding:20px 0px;
+	font-size: medium;
+}
+
+#Select-Form-Tab {
+	clear: none;
+	float: left;
+	margin-left: 0.3984%;
+	width: 49.8007%;
+	display: block;
+	margin-top:15px;
+}
+
+#Select-Form-Tab ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: medium;
+}
+
+#Select-Form-Tab ul li {
+	display:  inline-block;
+	margin-bottom: 0px;
+}
+
+#Select-Form-Tab ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+  background: #CCC;
+}
+
+#Select-Form-Tab ul li a:hover {
+	background: #999;
+}
+
+#Select-Form-Tab ul li a:active {
+	background: #999;
+}
+
+
+#Back-btn {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: none;
+}
+
+#Select_Form-2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:center;
+}
+
+#Select-Form-Txt-2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 41.4342%;
+	display: block;
+	text-align: right;
+	padding:20px 0px;
+	font-size: medium;
+}
+
+#Select-Form-Tab-2 {
+	clear: none;
+	float: left;
+	margin-left: 0.3984%;
+	width: 49.8007%;
+	display: block;
+	margin-top:15px;
+}
+
+#Select-Form-Tab-2 ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: medium;
+}
+
+#Select-Form-Tab-2 ul li {
+	display:  inline-block;
+	margin-bottom: 0px;
+}
+
+#Select-Form-Tab-2 ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+  background: #CCC;
+}
+
+#Select-Form-Tab-2 ul li a:hover {
+	background: #999;
+}
+
+#Select-Form-Tab-2 ul li a:active {
+	background: #999;
+}
+
+#Form-ad {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+	margin-bottom:20px;
+}
+
+#Pub-Name {
+	clear: both;
+	float: left;
+	margin-top: 0px;
+	width: 57.86835%;
+	display: block;
+	background-color: #666;
+	margin-left: 8.3665%;
+}
+
+#Pub-Name p {
+	padding:15px 15px;
+	text-align: left;
+	margin: 0px;
+	color: #FFF;
+	font-size: medium;
+}
+
+#Format-Name {
+	clear: none;
+	float: left;
+	margin-top: 0px;
+	margin-left:0.1%;
+	width: 25%;
+	display: block;
+	background-color: #666;
+}
+
+#Format-Name p {
+	text-align: center;
+	padding:15px 15px;
+	margin: 0px;
+	color: #FFF;
+	font-size: medium;
+}
+
+
+#AB {
+	clear: both;
+	float: left;
+	margin-top: 1px;
+	margin-left: 8.3665%;
+	width: 16.3346%;
+	display: block;
+	background-color: #dfdfdf;
+}
+
+#AB p {
+	text-align: left;
+	padding: 10px 10px;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AC {
+	clear: none;
+	float: left;
+	margin-top: 1px;
+	margin-left: 0.1%;
+	width: 25%;
+	display: block;
+	background-color: #dfdfdf;
+}
+
+#AC p {
+	text-align: left;
+	padding: 7.5px 10px;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AC p input {
+	text-align: left;
+	width: 95%;
+	padding: 3px;
+	outline: none;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AD {
+	clear: none;
+	float: left;
+	margin-top: 1px;
+	margin-left: 0.1%;
+	width: 16.3346%;
+	display: block;
+	background-color: #dfdfdf;
+}
+
+#AD p {
+	text-align: left;
+	padding: 10px 10px;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AE {
+	clear: none;
+	float: left;
+	margin-top: 1px;
+	margin-left: 0.1%;
+	width: 25%;
+	display: block;
+	background-color: #dfdfdf;
+}
+
+#AE p {
+	text-align: left;
+	padding: 7.5px 10px;
+	margin: 0px;
+	color: #000;
+	font-size: small;
+}
+
+#AE p input {
+	text-align: left;
+	width: 95%;
+	outline: none;
+	margin: 0px;
+	padding: 3px;
+	color: #000;
+	font-size: small;
+}
+#error-div {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+}

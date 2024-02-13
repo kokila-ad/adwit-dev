@@ -1,0 +1,79 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.container {
+	padding: 0 15px;
+}
+.login{
+	text-align: center;
+	padding: 100px 0 150px 0;
+}
+.logo {
+	margin-bottom: 80px;
+}
+.logo img{
+	width: 120px;
+}
+.login input ,.login .input-group{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.input-group-addon {
+	background-color: #fff;
+}
+
+.input-group-addon a{ color: #ddd; }
+.input-group-addon a:hover{ color: #ccc; text-decoration: none;}
+
+
+.input-group input {
+	border-left: 0;
+	padding-left: 0;
+}
+
+.forgot_password {
+	text-align: right !important;
+	font-size: 12px;
+	padding-top: 5px;
+}
+.forgot_password a {
+	color: #d9534f;
+	
+}
+
+.page-footer {
+  font-size: 12px;
+  padding: 17px 0;
+  text-align: right;
+  color: #3b434c;
+  border-top: 1px solid #ccc;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.page-footer .container {
+	padding: 0;
+}
+.page-footer .container ul {
+	list-style-type: none;
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+
+.page-footer .container ul li {
+	float: left;
+	padding: 0 15px;
+}
+
+.page-footer .container ul li a{
+	color: #444;
+}
+.page-footer .container ul li a:hover{
+	color: #d9534f;
+	text-decoration: none;
+}

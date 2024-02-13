@@ -1,0 +1,409 @@
+
+.awe-nav > li > a:hover {
+  color: #333;
+}
+
+.awe-nav > li.current,
+.awe-nav > li.active > a {
+  color: #444;
+  background: #ffffff;  
+ border-right: 1px solid #fff;
+ border-left: 6px solid #333333;
+ 
+}
+
+.awe-nav-responsive {
+  overflow: auto;
+}
+
+.awe-nav-responsive .awe-nav {
+  white-space: nowrap;
+}
+
+.awemenu-nav {
+  height: 62px;
+  background-color: #fff;
+  border-bottom: solid 1px #e1e1e1;
+  border-top: solid 2px #ed1c24;
+}
+
+.awemenu-nav .awemenu-bars {
+  display: none;
+}
+
+.awemenu-nav .awemenu-container {
+  position: relative;
+}
+
+.awemenu-left .awemenu,
+.awemenu-default .awemenu {
+  color: #ffffff;
+  position: static;
+  width: auto;
+}
+
+.awemenu-left .awemenu.awemenu-right,
+.awemenu-default .awemenu.awemenu-right {
+  float: right;
+}
+
+.awemenu-left .awemenu.awemenu-left,
+.awemenu-default .awemenu.awemenu-left {
+  float: left;
+}
+
+.awemenu-left .awemenu .awemenu-item > a,
+.awemenu-default .awemenu .awemenu-item > a {
+  color: #333;
+  font-size: 14px;
+ // text-transform: uppercase;
+  line-height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.awemenu-left .awemenu .awemenu-item:hover > a, .awemenu-left .awemenu .awemenu-item.awemenu-current-item > a, .awemenu-left .awemenu .awemenu-item.awemenu-active > a,
+.awemenu-default .awemenu .awemenu-item:hover > a,
+.awemenu-default .awemenu .awemenu-item.awemenu-current-item > a,
+.awemenu-default .awemenu .awemenu-item.awemenu-active > a {
+  color: #006599;
+  background-color: transparent;
+}
+
+.awemenu-left .awemenu .awemenu-item .awemenu-submenu,
+.awemenu-default .awemenu .awemenu-item .awemenu-submenu {
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  border: 1px solid #ccc;
+    border-top: 3px solid #ed1c24;
+    top: 60px;
+}
+
+.awemenu-left .awemenu .awemenu-item .awemenu-submenu .awemenu-item > a,
+.awemenu-default .awemenu .awemenu-item .awemenu-submenu .awemenu-item > a {
+  color: #333;
+}
+
+.awemenu-left .awemenu .awemenu-item .awemenu-submenu .awemenu-item:hover > a,
+.awemenu-left .awemenu .awemenu-item .awemenu-submenu .awemenu-item.awemenu-current-item > a,
+.awemenu-default .awemenu .awemenu-item .awemenu-submenu .awemenu-item:hover > a,
+.awemenu-default .awemenu .awemenu-item .awemenu-submenu .awemenu-item.awemenu-current-item > a {
+  color: #ed1c24;
+}
+
+.awemenu-left.awemenu-standard .awemenu .awemenu-item > a .awemenu-arrow, .awemenu-left.awemenu-top .awemenu .awemenu-item > a .awemenu-arrow, .awemenu-left.awemenu-bottom .awemenu .awemenu-item > a .awemenu-arrow, .awemenu-left.awemenu-left .awemenu .awemenu-item > a .awemenu-arrow, .awemenu-left.awemenu-outleft .awemenu .awemenu-item > a .awemenu-arrow,
+.awemenu-default.awemenu-standard .awemenu .awemenu-item > a .awemenu-arrow,
+.awemenu-default.awemenu-top .awemenu .awemenu-item > a .awemenu-arrow,
+.awemenu-default.awemenu-bottom .awemenu .awemenu-item > a .awemenu-arrow,
+.awemenu-default.awemenu-left .awemenu .awemenu-item > a .awemenu-arrow,
+.awemenu-default.awemenu-outleft .awemenu .awemenu-item > a .awemenu-arrow {
+  position: absolute;
+  line-height: 1;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.awemenu-left.awemenu-standard .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a, .awemenu-left.awemenu-top .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a, .awemenu-left.awemenu-bottom .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a, .awemenu-left.awemenu-left .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a, .awemenu-left.awemenu-outleft .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a,
+.awemenu-default.awemenu-standard .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a,
+.awemenu-default.awemenu-top .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a,
+.awemenu-default.awemenu-bottom .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a,
+.awemenu-default.awemenu-left .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a,
+.awemenu-default.awemenu-outleft .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a {
+  padding-right: 30px;
+}
+
+.awemenu-left.awemenu-standard .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a .awemenu-arrow, .awemenu-left.awemenu-top .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a .awemenu-arrow, .awemenu-left.awemenu-bottom .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a .awemenu-arrow, .awemenu-left.awemenu-left .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a .awemenu-arrow, .awemenu-left.awemenu-outleft .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a .awemenu-arrow,
+.awemenu-default.awemenu-standard .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a .awemenu-arrow,
+.awemenu-default.awemenu-top .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a .awemenu-arrow,
+.awemenu-default.awemenu-bottom .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a .awemenu-arrow,
+.awemenu-default.awemenu-left .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a .awemenu-arrow,
+.awemenu-default.awemenu-outleft .awemenu .awemenu-item .awemenu-dropdown .awemenu-item > a .awemenu-arrow {
+  right: 12px;
+}
+
+.awemenu-left.awemenu-standard .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a, .awemenu-left.awemenu-top .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a, .awemenu-left.awemenu-bottom .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a, .awemenu-left.awemenu-left .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a, .awemenu-left.awemenu-outleft .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a,
+.awemenu-default.awemenu-standard .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a,
+.awemenu-default.awemenu-top .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a,
+.awemenu-default.awemenu-bottom .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a,
+.awemenu-default.awemenu-left .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a,
+.awemenu-default.awemenu-outleft .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a {
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+.awemenu-left.awemenu-standard .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a .awemenu-arrow, .awemenu-left.awemenu-top .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a .awemenu-arrow, .awemenu-left.awemenu-bottom .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a .awemenu-arrow, .awemenu-left.awemenu-left .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a .awemenu-arrow, .awemenu-left.awemenu-outleft .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a .awemenu-arrow,
+.awemenu-default.awemenu-standard .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a .awemenu-arrow,
+.awemenu-default.awemenu-top .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a .awemenu-arrow,
+.awemenu-default.awemenu-bottom .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a .awemenu-arrow,
+.awemenu-default.awemenu-left .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a .awemenu-arrow,
+.awemenu-default.awemenu-outleft .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a .awemenu-arrow {
+  right: auto;
+  left: 12px;
+}
+
+.awemenu-left.awemenu-left .awemenu, .awemenu-left.awemenu-outleft .awemenu,
+.awemenu-default.awemenu-left .awemenu,
+.awemenu-default.awemenu-outleft .awemenu {
+  width: 250px;
+}
+
+.awemenu-left.awemenu-right .awemenu, .awemenu-left.awemenu-outright .awemenu,
+.awemenu-default.awemenu-right .awemenu,
+.awemenu-default.awemenu-outright .awemenu {
+  width: 250px;
+}
+
+.awemenu-left.awemenu-right .awemenu .awemenu-item > a, .awemenu-left.awemenu-outright .awemenu .awemenu-item > a,
+.awemenu-default.awemenu-right .awemenu .awemenu-item > a,
+.awemenu-default.awemenu-outright .awemenu .awemenu-item > a {
+  padding-left: 30px;
+}
+
+.awemenu-left.awemenu-right .awemenu .awemenu-item > a .awemenu-arrow, .awemenu-left.awemenu-outright .awemenu .awemenu-item > a .awemenu-arrow,
+.awemenu-default.awemenu-right .awemenu .awemenu-item > a .awemenu-arrow,
+.awemenu-default.awemenu-outright .awemenu .awemenu-item > a .awemenu-arrow {
+  position: absolute;
+  line-height: 1;
+  left: 12px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.awemenu-left.awemenu-right .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a, .awemenu-left.awemenu-outright .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a,
+.awemenu-default.awemenu-right .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a,
+.awemenu-default.awemenu-outright .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a {
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.awemenu-left.awemenu-right .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a .awemenu-arrow, .awemenu-left.awemenu-outright .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a .awemenu-arrow,
+.awemenu-default.awemenu-right .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a .awemenu-arrow,
+.awemenu-default.awemenu-outright .awemenu .awemenu-item .awemenu-dropdown .awemenu-item.awemenu-invert > a .awemenu-arrow {
+  left: auto;
+  right: 12px;
+}
+
+.awemenu-left .awemenu-submenu .awemenu-item > a,
+.awemenu-default .awemenu-submenu .awemenu-item > a {
+  line-height: 40px;
+}
+
+.awemenu-mobile-default .awemenu-bars {
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 20px !important;
+}
+
+.awemenu-mobile-default.awemenu-mobile-standard .awemenu-container, .awemenu-mobile-default.awemenu-mobile-top .awemenu-container, .awemenu-mobile-default.awemenu-mobile-bottom .awemenu-container, .awemenu-mobile-default.awemenu-mobile-outleft .awemenu-container, .awemenu-mobile-default.awemenu-mobile-outright .awemenu-container {
+  //background: #fff;
+}
+
+.awemenu-mobile-default.awemenu-mobile-standard .awemenu-container .awemenu, .awemenu-mobile-default.awemenu-mobile-top .awemenu-container .awemenu, .awemenu-mobile-default.awemenu-mobile-bottom .awemenu-container .awemenu, .awemenu-mobile-default.awemenu-mobile-outleft .awemenu-container .awemenu, .awemenu-mobile-default.awemenu-mobile-outright .awemenu-container .awemenu {
+  position: absolute;
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+.awemenu-mobile-default.awemenu-mobile-standard .awemenu-container .awemenu .awemenu-item > a, .awemenu-mobile-default.awemenu-mobile-top .awemenu-container .awemenu .awemenu-item > a, .awemenu-mobile-default.awemenu-mobile-bottom .awemenu-container .awemenu .awemenu-item > a, .awemenu-mobile-default.awemenu-mobile-outleft .awemenu-container .awemenu .awemenu-item > a, .awemenu-mobile-default.awemenu-mobile-outright .awemenu-container .awemenu .awemenu-item > a {
+  display: block;
+  color: #333;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.25s ease;
+          transition: all 0.25s ease;
+  font-size: 14px;
+}
+
+.awemenu-mobile-default.awemenu-mobile-standard .awemenu-container .awemenu .awemenu-item > a .awemenu-arrow, .awemenu-mobile-default.awemenu-mobile-top .awemenu-container .awemenu .awemenu-item > a .awemenu-arrow, .awemenu-mobile-default.awemenu-mobile-bottom .awemenu-container .awemenu .awemenu-item > a .awemenu-arrow, .awemenu-mobile-default.awemenu-mobile-outleft .awemenu-container .awemenu .awemenu-item > a .awemenu-arrow, .awemenu-mobile-default.awemenu-mobile-outright .awemenu-container .awemenu .awemenu-item > a .awemenu-arrow {
+  float: right;
+  margin-top: 3px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.awemenu-mobile-default.awemenu-mobile-standard .awemenu-container .awemenu .awemenu-item:hover > a, .awemenu-mobile-default.awemenu-mobile-top .awemenu-container .awemenu .awemenu-item:hover > a, .awemenu-mobile-default.awemenu-mobile-bottom .awemenu-container .awemenu .awemenu-item:hover > a, .awemenu-mobile-default.awemenu-mobile-outleft .awemenu-container .awemenu .awemenu-item:hover > a, .awemenu-mobile-default.awemenu-mobile-outright .awemenu-container .awemenu .awemenu-item:hover > a, .awemenu-mobile-default.awemenu-mobile-standard .awemenu-container .awemenu .awemenu-item.awemenu-active > a, .awemenu-mobile-default.awemenu-mobile-top .awemenu-container .awemenu .awemenu-item.awemenu-active > a, .awemenu-mobile-default.awemenu-mobile-bottom .awemenu-container .awemenu .awemenu-item.awemenu-active > a, .awemenu-mobile-default.awemenu-mobile-outleft .awemenu-container .awemenu .awemenu-item.awemenu-active > a, .awemenu-mobile-default.awemenu-mobile-outright .awemenu-container .awemenu .awemenu-item.awemenu-active > a {
+  color: #000;
+  background-color: #f5f5f5;
+}
+
+.awemenu-mobile-default.awemenu-mobile-standard .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item, .awemenu-mobile-default.awemenu-mobile-top .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item, .awemenu-mobile-default.awemenu-mobile-bottom .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item, .awemenu-mobile-default.awemenu-mobile-outleft .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item, .awemenu-mobile-default.awemenu-mobile-outright .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.awemenu-mobile-default.awemenu-mobile-standard .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item > a, .awemenu-mobile-default.awemenu-mobile-top .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item > a, .awemenu-mobile-default.awemenu-mobile-bottom .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item > a, .awemenu-mobile-default.awemenu-mobile-outleft .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item > a, .awemenu-mobile-default.awemenu-mobile-outright .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item > a {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.awemenu-mobile-default.awemenu-mobile-standard .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item:hover > a, .awemenu-mobile-default.awemenu-mobile-top .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item:hover > a, .awemenu-mobile-default.awemenu-mobile-bottom .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item:hover > a, .awemenu-mobile-default.awemenu-mobile-outleft .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item:hover > a, .awemenu-mobile-default.awemenu-mobile-outright .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item:hover > a, .awemenu-mobile-default.awemenu-mobile-standard .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item.awemenu-active > a, .awemenu-mobile-default.awemenu-mobile-top .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item.awemenu-active > a, .awemenu-mobile-default.awemenu-mobile-bottom .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item.awemenu-active > a, .awemenu-mobile-default.awemenu-mobile-outleft .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item.awemenu-active > a, .awemenu-mobile-default.awemenu-mobile-outright .awemenu-container .awemenu .awemenu-item .awemenu-submenu .awemenu-item.awemenu-active > a {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.awemenu-mobile-default.awemenu-mobile-outleft .awemenu-bars, .awemenu-mobile-default.awemenu-mobile-outright .awemenu-bars {
+  float: right;
+}
+
+.awemenu-mobile-default.awemenu-mobile-outleft .awemenu, .awemenu-mobile-default.awemenu-mobile-outright .awemenu {
+  width: 250px;
+  position: fixed !important;
+  border-right: solid 1px #ddd;
+}
+
+.awemenu-mobile-default.awemenu-mobile-outright .awemenu-bars {
+  float: left;
+}
+
+.awemenu-mobile-default.awemenu-active .awemenu-bars span.fa:before {
+  content: '\f00d';
+}
+
+.awe-box {
+  display: block;
+}
+
+.awe-box-media {
+  display: block;
+}
+
+.awe-box-icon {
+  font-size: inherit;
+}
+
+.awe-box-icon.icon-large {
+  font-size: 40px;
+}
+
+.awe-box-icon.icon-medium {
+  font-size: 30px;
+}
+
+.awe-box-icon.icon-small {
+  font-size: 20px;
+}
+
+.awe-box-image {
+  display: inline-block;
+}
+
+.awe-box-image img {
+  max-width: 100%;
+}
+
+.awe-box-content {
+  display: block;
+  overflow: hidden;
+}
+
+.awe-box-content h3, .awe-box-content h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.awe-box-content h2 {
+  font-size: 30px;
+  margin: 45px 0;
+}
+
+.awe-box-content h3 {
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.awe-box-content p {
+  margin-bottom: 0;
+  color: #898989;
+}
+.awe-nav {
+  display: block;
+ // text-align: center;
+  padding-left: 0;
+  //border-bottom: solid 1px rgba(225, 225, 225, 0.02);
+  margin-bottom: 0;
+}
+
+.awe-nav > li {
+  display: block;
+ // margin-bottom: 5px;
+}
+
+.awe-nav > li > a {
+  padding: 10px 15px;
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+  //bottom: -1px;
+  width: 100%;
+  background: #f4f5f6; 
+  border-bottom: solid 1px #e1e1e1;
+  border-right: solid 1px #e1e1e1;
+  border-left: solid 6px #f4f5f6;
+}
+
+.left-2 {
+	left: -1px;
+	min-height: 120px;
+}
+
+.zindex {
+	z-index: 999;
+    background-color: #fff;
+}
+.border-bottom {
+    border-bottom: solid 1px #e1e1e1;
+}
+.border-right {
+    border-right: solid 1px #e1e1e1 !important;
+}
+.border-left {
+    border-left: solid 1px #e1e1e1;
+}
+.border-top {
+    border-top: solid 1px #e1e1e1;
+}
+.padding-20 {
+    padding: 20px !important;
+}
+.back_white{
+background-color:white;
+}
+.padding-0 {
+    padding: 0 !important;
+}
+.right{
+float:right;
+}
+.margin-left-30{
+margin-left:30px;
+}
