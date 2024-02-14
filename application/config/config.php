@@ -25,7 +25,7 @@ date_default_timezone_set('America/New_York');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://dev.adwitads.com/adwitads/';
+$config['base_url'] = 'https://dev.adwitads.com/adwit_dev/';
 
 /*
 |--------------------------------------------------------------------------
